@@ -1,0 +1,256 @@
+# C# and .NET Interview Questions
+
+This repository contains a comprehensive list of interview questions for C# and .NET developers. These questions cover a wide range of topics, from basic language features to advanced concepts in software architecture and design.
+
+## Table of Contents
+
+1. [.NET Fundamentals](#1-net-fundamentals)
+2. [Memory Management and Types](#2-memory-management-and-types)
+3. [Collections and Data Structures](#3-collections-and-data-structures)
+4. [Multithreading and Asynchronous Programming](#4-multithreading-and-asynchronous-programming)
+5. [Exception Handling](#5-exception-handling)
+6. [Language Features](#6-language-features)
+7. [Object-Oriented Programming](#7-object-oriented-programming)
+8. [Abstract Classes and Interfaces](#8-abstract-classes-and-interfaces)
+9. [Constructors and Initialization](#9-constructors-and-initialization)
+10. [ASP.NET Core and MVC](#10-aspnet-core-and-mvc)
+11. [Entity Framework and Database](#11-entity-framework-and-database)
+12. [LINQ](#12-linq)
+13. [Design Patterns](#13-design-patterns)
+14. [Microservices and Distributed Systems](#14-microservices-and-distributed-systems)
+15. [Performance and Optimization](#15-performance-and-optimization)
+16. [Algorithms and Data Structures](#16-algorithms-and-data-structures)
+17. [Version Control and Project Management](#17-version-control-and-project-management)
+18. [Miscellaneous](#18-miscellaneous)
+
+## 1. .NET Fundamentals
+
+1. Explain difference between .NET and C#?
+2. .NET Framework vs .NET Core vs .NET 5.0
+3. What is the difference between .NET Framework and .NET Core?
+4. What is IL (Intermediate Language) Code?
+5. What is the use of JIT (Just in time compiler)?
+6. Is it possible to view IL code?
+7. What is the benefit of compiling into IL code?
+8. Does .NET support multiple programming languages?
+9. What is CLR (Common Language Runtime)?
+10. What is managed and unmanaged code?
+11. Explain the importance of Garbage collector
+12. Can garbage collector claim unmanaged objects?
+13. What is the importance of CTS?
+14. Explain CLS?
+15. What are the different types of JIT (Just-In-Time) compilation in .NET?
+
+## 2. Memory Management and Types
+
+16. Difference between Stack vs Heap?
+17. What are Value types & Reference types?
+18. Explain boxing and unboxing?
+19. What is consequence of boxing and unboxing?
+20. Explain casting, implicit casting and explicit casting?
+21. What can happen during explicit casting?
+22. What is the difference between `IEnumerable`, `IQueryable`, `List`, and `Array` in .NET?
+23. What are the key differences between `decimal` and `float` in C#?
+24. When should you use `decimal` over `float`?
+25. Can you explain the precision and range of `decimal`, `float`, and `double`?
+26. Why does `decimal` have a suffix `m` while `float` has `f`? What happens if you don't use the suffix?
+27. What is the impact of `decimal` and `float` on performance in C#?
+28. How does rounding work differently between `decimal` and `float` in C#?
+29. What are some best practices for choosing between `decimal`, `float`, and `double`?
+30. How does floating-point arithmetic impact the results of calculations when using `float` or `double`?
+31. What are the differences between `dynamic`, `var`, and `object`?
+32. What are the benefits and drawbacks of using `dynamic` in C#?
+33. What are the benefits and limitations of using value types (`structs`) versus reference types (`classes`) in C#?
+34. What are the differences between `Class` and `Record` in C#?
+
+## 3. Collections and Data Structures
+
+35. Differentiate between Array and ArrayList?
+36. Whose performance is better array or arraylist?
+37. What are generic collections?
+38. What is the difference between an Array and a Linked List? When would you use each?
+39. Explain the differences between a Stack and a Queue. Provide real-world examples for each.
+40. What is a Hash Table, and how does it handle collisions?
+
+## 4. Multithreading and Asynchronous Programming
+
+41. What are threads (Multithreading)?
+42. How are threads different from TPL?
+43. What are the differences between asynchronous and synchronous programming in .NET?
+44. Explain the purpose of the `async` and `await` keywords in .NET.
+45. What is the difference between `Task` and `Thread` in .NET?
+46. What is asynchronous programming, and how is it different from synchronous programming?
+47. What is a `Task` in C#, and how does it differ from a `Thread`?
+48. What is `Task.Run` method, and when should you use it?
+49. What is `Task.WhenAll` and `Task.WhenAny` in C#, and how do they differ?
+50. What are some common pitfalls of asynchronous programming in C#?
+51. What is the difference between parallel programming and asynchronous programming?
+52. What are `CancellationToken` and `CancellationTokenSource` in C#, and how do they work?
+53. Explain the use of `Lock` in C# and how it helps in multithreading. What are some common pitfalls?
+
+## 5. Exception Handling
+
+54. How do we handle exceptions in C# (try/catch)?
+55. What is the need of finally?
+56. How do you implement exception handling in .NET?
+57. How do you handle exceptions in ASP.NET Core?
+
+## 6. Language Features
+
+58. Why do we need the out keyword?
+59. What is the need of Delegates?
+60. What are events?
+61. What is a Multicast delegates?
+62. What is an Event?
+63. How to create an event?
+64. Delegate vs Events
+65. What are generics in .NET, and why are they useful?
+66. What are extension methods in C#, and how do you create one?
+67. Explain the concept of delegates in C#. What are their uses?
+68. What is the difference between `IEnumerable` and `IQueryable` in C#?
+69. Explain the purpose of `yield` in C#. How does it work?
+70. What are `Func`, `Action`, and `Predicate` delegates in C#?
+71. What is the difference between `ref` and `out` parameters in C#? When would you use each?
+72. What are covariance and contravariance in C#? How are they applied to delegates, generics, or interfaces?
+73. What are expression trees in C#, and how are they used?
+74. What is the difference between `String` and `StringBuilder` in C#? When should you use one over the other?
+75. What is the `using` statement, and how does it relate to resource management in C#?
+76. Explain the importance of immutability in C#. How can it benefit multithreaded applications?
+77. What is reflection in C#, and how can it be used responsibly?
+
+## 7. Object-Oriented Programming
+
+78. What is a class and object?
+79. Abstraction vs Encapsulation?
+80. Explain Inheritance?
+81. Explain virtual keyword?
+82. What is overriding?
+83. Explain overloading?
+84. Overloading vs Overriding?
+85. What is polymorphism?
+86. Can polymorphism work without inheritance?
+87. Explain static vs dynamic polymorphism?
+88. Explain operator overloading?
+89. Explain the SOLID principles in object-oriented design.
+
+## 8. Abstract Classes and Interfaces
+
+90. Why do we need Abstract classes?
+91. Are Abstract methods virtual?
+92. Can we create an instance of Abstract classes?
+93. Is it compulsory to implement Abstract methods?
+94. Why simple base class replace Abstract class?
+95. Explain interfaces and why do we need it?
+96. Can we write logic in interface?
+97. Can we define methods as private in interface?
+98. If I want to change interface what's the best practice?
+99. Explain Multiple inheritance in Interface?
+100. Explain Interface Segregation principle?
+101. Can we create instance of interface?
+102. Can we do Multiple inheritance with Abstract classes?
+103. Difference between Abstract and Interfaces?
+
+## 9. Constructors and Initialization
+
+104. Why do we need constructors?
+105. In parent child which constructor fires first?
+106. How are initializers executed?
+107. How are static constructors executed in Parent child?
+108. When does static constructor fire?
+
+## 10. ASP.NET Core and MVC
+
+109. Can you describe the ASP.NET MVC Architecture?
+110. What is the purpose of middleware in ASP.NET Core?
+111. What are RESTful APIs, and how do you implement them in ASP.NET Core?
+112. Explain the purpose of the `IActionResult` interface in ASP.NET Core MVC.
+113. How would you handle security in an ASP.NET Core application?
+114. What are Middleware components in ASP.NET Core, and how do they function?
+115. Describe how routing works in ASP.NET Core.
+116. How do you handle configuration settings in an ASP.NET Core application?
+117. Explain the role of `IActionResult` in ASP.NET Core MVC and the different types it includes.
+118. What is CORS, and how do you enable it in an ASP.NET Core application?
+119. How do you implement logging in .NET Core, and what are the best practices?
+120. What are Background Services in .NET Core, and when would you use them?
+121. What is Kestrel, and why is it used in .NET Core applications?
+122. How do you deploy an ASP.NET Core application?
+
+## 11. Entity Framework and Database
+
+123. How does Entity Framework work? What are its advantages?
+124. What strategies do you use for optimizing database queries in .NET applications?
+125. What are the different types of joins in SQL, and how do they work?
+126. How do you optimize SQL queries for performance?
+127. Explain the use of indexes in SQL. What are the pros and cons?
+128. What is a SQL transaction, and how do you implement it in .NET?
+129. What are SQL stored procedures, and why are they used?
+130. Explain normalization and denormalization in database design. What are the trade-offs?
+131. What is ACID in the context of databases, and why is it important?
+132. What are NoSQL databases, and when would you choose them over SQL databases?
+133. What are the differences between Functions and Stored Procedures in SQL?
+134. What is the difference between `WHERE` and `HAVING` clauses in SQL?
+135. What is an Index in SQL, and how does it work?
+136. What are the differences between `JOIN` and Nested Query in SQL?
+137. What are the differences between `Table` and `View` in SQL?
+138. What is a Trigger in SQL, and how is it used?
+
+## 12. LINQ
+
+139. Explain the concept of LINQ. What are its advantages?
+140. What are the advantages of using LINQ over traditional loops and SQL queries in C#?
+141. Explain the difference between `Select` and `SelectMany` in LINQ.
+142. How do you use LINQ to filter, sort, and group data?
+
+## 13. Design Patterns
+
+143. Can you explain the Factory Design Pattern and provide a use case?
+144. What is the Singleton Pattern, and when would you use it?
+145. Explain the Dependency Injection pattern and its advantages.
+146. What is the Repository Pattern, and how does it work in .NET Core?
+147. Can you describe the Strategy Design Pattern and when you might use it?
+148. What is the Observer Pattern, and how is it implemented in .NET?
+149. Explain the Adapter Pattern with an example.
+150. What is the Decorator Pattern, and how is it useful?
+151. How would you implement the Command Pattern in a .NET application?
+152. Explain the importance of the Liskov Substitution Principle in object-oriented design.
+153. How do you apply the Open/Closed Principle in your code?
+154. What is the purpose of the Builder Pattern, and when would you use it?
+155. How would you refactor code to follow the Interface Segregation Principle?
+
+## 14. Microservices and Distributed Systems
+
+156. What is a message broker, and why is it used in distributed systems?
+157. Explain the core components of RabbitMQ and how they work together.
+158. What are the differences between the types of exchanges in RabbitMQ (Direct, Topic, Fanout, Headers)?
+159. What is a Consumer Acknowledgment in RabbitMQ, and why is it important?
+160. What is Domain-Driven Design (DDD)?
+161. What are the key building blocks of DDD?
+162. What is the role of Entities and Value Objects in DDD?
+163. What is a microservice, and how does it differ from a monolithic application?
+164. What are the benefits of using microservices architecture?
+165. What are some common challenges associated with microservices?
+166. What is the role of an API Gateway in microservices architecture?
+167. How do microservices communicate with each other?
+168. What is service discovery, and why is it important in microservices?
+
+## 15. Performance and Optimization
+
+169. Describe a time when you optimized the performance of a .NET application.
+170. What are memory leaks in C#, and how can they occur despite garbage collection?
+171. How does garbage collection work in .NET?
+172. How does garbage collection work in C#, and what are the different generations in the .NET garbage collector?
+
+## 16. Algorithms and Data Structures
+
+173. Describe the Binary Search algorithm. What are its time complexities, and when is it used?
+174. Explain Depth-First Search (DFS) and Breadth-First Search (BFS) in graph traversal. What are their differences and use cases?
+175. What is Dynamic Programming, and how does it differ from Divide and Conquer?
+176. Describe the Quick Sort algorithm and its average and worst-case time complexities.
+
+## 17. Version Control and Project Management
+
+177. How do you manage version control in your projects?
+
+## 18. Miscellaneous
+
+178. What is SignalR, and when would you use it?
